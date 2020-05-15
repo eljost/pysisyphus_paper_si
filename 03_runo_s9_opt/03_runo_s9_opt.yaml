@@ -1,0 +1,22 @@
+opt:
+ type: rfo
+ max_cycles: 250
+ trust_radius: 0.3
+ trust_max: 0.3
+ thresh: gau_tight
+ gdiis: True
+ line_search: True
+calc:
+ type: turbomole
+ # This path should be updated to an absolute path
+ control_path: control_path_no_fermi
+ track: True
+ ovlp_with: adapt
+ ovlp_type: wf
+ cdds: calc
+ orient: reset;center {1.5850552 -0.03911972 0.442001}; rotate z -142.16; rotate y 55.39; rotate z 91.11;
+ pal: 24
+ charge: 1
+xyz: runo_nto_track.xyz
+coord_type: redund
+add_prims: [[0,6,7]]

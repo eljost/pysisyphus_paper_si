@@ -1,0 +1,14 @@
+tsopt:
+ type: rsirfo
+ do_hess: True
+ hessian_init: ts_calculated_init_cart_hessian
+ #hessian_recalc: 5
+ thresh: gau_tight
+calc:
+ type: orca
+ keywords: cam-b3lyp tightscf def2-svp rijcosx d3bj grid4 finalgrid5 gridx6
+ charge: 0
+ mult: 1
+ pal: 8
+xyz: splined_hei.xyz
+coord_type: redund

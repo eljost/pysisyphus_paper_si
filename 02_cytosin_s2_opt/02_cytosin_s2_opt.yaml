@@ -1,0 +1,18 @@
+opt:
+ type: rfo
+ max_cycles: 50
+ thresh: gau
+calc:
+ type: turbomole
+ # This path should be updated to an absolute path
+ control_path: control_pbe0_clean_s2
+ track: True
+ ovlp_type: wf
+ ovlp_with: adapt
+ cdds: render
+ mem: 1000
+ orient: reset;center {-3.5575373 2.2096293 1.4794437E-5}; rotate z -0.1; rotate y 24.48; rotate z 88.47;
+ adapt_args: [0.5, 0.3, 0.6]
+ pal: 4
+xyz: cytosin.xyz
+coord_type: redund

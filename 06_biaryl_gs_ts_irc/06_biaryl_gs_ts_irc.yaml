@@ -1,0 +1,32 @@
+preopt:
+ max_cycles: 5
+cos:
+ type: gs
+ max_nodes: 11
+ fix_ends: True
+opt:
+ type: string
+ gamma: 1.0
+ align: False
+ stop_in_when_full: 0
+tsopt:
+ type: rsirfo
+ do_hess: True
+ hessian_recalc: 5
+ thresh: gau_tight
+irc:
+ type: eulerpc
+ step_length: 0.1
+ hessian_recalc: 10
+ rms_grad_thresh: 0.001
+ opt_ends: fragments
+ corr_func: scipy
+calc:
+ type: orca
+ keywords: cam-b3lyp tightscf def2-svp rijcosx d3bj grid4 finalgrid5 gridx6
+ charge: 0
+ mult: 1
+ pal: 8
+preopt_ends: True
+xyz: [split.image_000.xyz, split.image_056.xyz]
+coord_type: dlc

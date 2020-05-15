@@ -1,0 +1,75 @@
+                           d8b                            888
+                           Y8P                            888
+                                                          888
+88888b.  888  888 .d8888b  888 .d8888b  888  888 88888b.  88888b.  888  888 .d8888b
+888 "88b 888  888 88K      888 88K      888  888 888 "88b 888 "88b 888  888 88K
+888  888 888  888 "Y8888b. 888 "Y8888b. 888  888 888  888 888  888 888  888 "Y8888b.
+888 d88P Y88b 888      X88 888      X88 Y88b 888 888 d88P 888  888 Y88b 888      X88
+88888P"   "Y88888  88888P' 888  88888P'  "Y88888 88888P"  888  888  "Y88888  88888P'
+888           888                            888 888
+888      Y8b d88P                       Y8b d88P 888
+888       "Y88P"                         "Y88P"  888                            
+
+Version 0.4rc7+379.g202f4f6
+
+{'calc': {'charge': 0,
+          'keywords': 'cam-b3lyp tightscf def2-svp rijcosx d3bj grid4 '
+                      'finalgrid5 gridx6',
+          'mult': 1,
+          'pal': 8,
+          'type': 'orca'},
+ 'coord_type': 'redund',
+ 'interpol': {'between': 0, 'type': None},
+ 'tsopt': {'do_hess': True,
+           'dump': True,
+           'hessian_init': 'ts_calculated_init_cart_hessian',
+           'hessian_recalc': 5,
+           'overachieve_factor': 3,
+           'thresh': 'gau_tight',
+           'type': 'rsirfo'},
+ 'xyz': 'splined_hei.xyz'}
+
+Read 1 geometries.
+                          ###########################
+                          # RUNNING TS-OPTIMIZATION #
+                          ###########################
+Spent 74.0 s preparing the first cycle.
+cycle   max(force)    rms(force)     max(step)     rms(step)       s/cycle
+    0     0.068567     0.009671     0.171125     0.023819          0.1
+    1     0.027837     0.004392     0.160530     0.023793         70.9
+    2     0.016450     0.002602     0.236715     0.047584         67.7
+    3     0.012950     0.002429     0.294696     0.079305         69.9
+    4     0.036887     0.004456     0.159643     0.042970        898.2
+    5     0.008439     0.001158     0.233637     0.070013         69.2
+    6     0.027702     0.003122     0.175176     0.050371         63.6
+    7     0.019233     0.002644     0.076083     0.019827         69.9
+    8     0.012641     0.001601     0.094806     0.019827         63.2
+    9     0.011824     0.001560     0.060177     0.019850        894.2
+   10     0.000295     0.000082     0.126265     0.038309         60.6
+   11     0.001990     0.000307     0.070263     0.020379         62.6
+   12     0.000509     0.000120     0.038847     0.010911         60.1
+   13     0.000507     0.000079     0.009289     0.002421         61.7
+Energy increased by 0.000004 au! Cur. trust=0.125000.
+   14     0.000119     0.000015     0.000553     0.000164        885.5
+   15     0.000003     0.000001     0.000152     0.000042         42.4
+Converged!
+
+Final summary:
+            	max(forces,internal): 0.000003 hartree/(bohr,rad)
+            	rms(forces,internal): 0.000001 hartree/(bohr,rad)
+        	max(forces,cartesian): 0.000060 hartree/bohr
+        	rms(forces,cartesian): 0.000025 hartree/bohr
+        	energy: -1105.41996296 hartree
+Wrote final, hopefully optimized, geometry to 'final_geometry.xyz'
+Copied '/home/carpx/tmp/07_finer_tight/ts_opt_simple_coords/final_geometry.xyz' to 'ts_opt.xyz'.
+
+Calculating hessian at final geometry.
+... mass-weighing cartesian hessian
+... doing eckart-projection
+
+First 10 eigenvalues [-0.0033 -0.     -0.      0.      0.      0.      0.      0.0001  0.0002  0.0003]
+Imaginary frequencies: [-293.56   -7.05] cm⁻¹
+
+Wrote final (not mass-weighted) hessian to 'calculated_final_cart_hessian'.
+
+pysisyphus run took 4358s.

@@ -1,0 +1,31 @@
+opt:
+ type: rfo
+ max_cycles: 1000
+ thresh: gau_tight
+ trust_radius: 0.05
+ trust_max: 0.3
+calc:
+ type: g16
+ mem: 4176
+ route: b3lyp genecp int=ultrafine scrf=(iefpcm,solvent=dichloromethane) empiricaldispersion=GD3BJ td=(triplets,nstates=25,conver=3,root=10) 5d
+        scf=maxcycle=2000 iop(6/7=3,3/76=1000003500,3/77=0585006500,3/78=0810010000)
+ gen: |
+  C N H 0
+  6-31G(d)
+  ****
+  Pt  0
+  MWB60
+  ****
+
+  Pt 0
+  MWB60
+ track: True
+ ovlp_type: wf
+ ovlp_with: adapt
+ cdds: calc
+ adapt_args: [0.75, 0.3, 0.6]
+ pal: 24
+ charge: 0
+ mult: 1
+xyz: Pt-phen-TPA-CN-vertical-trip.xyz
+coord_type: redund

@@ -1,0 +1,82 @@
+                           d8b                            888
+                           Y8P                            888
+                                                          888
+88888b.  888  888 .d8888b  888 .d8888b  888  888 88888b.  88888b.  888  888 .d8888b
+888 "88b 888  888 88K      888 88K      888  888 888 "88b 888 "88b 888  888 88K
+888  888 888  888 "Y8888b. 888 "Y8888b. 888  888 888  888 888  888 888  888 "Y8888b.
+888 d88P Y88b 888      X88 888      X88 Y88b 888 888 d88P 888  888 Y88b 888      X88
+88888P"   "Y88888  88888P' 888  88888P'  "Y88888 88888P"  888  888  "Y88888  88888P'
+888           888                            888 888
+888      Y8b d88P                       Y8b d88P 888
+888       "Y88P"                         "Y88P"  888                            
+
+Version 0.4rc7+307.g2d38d15
+
+{'add_prims': [[0, 6, 7]],
+ 'calc': {'cdds': 'calc',
+          'charge': 1,
+          'control_path': '[edited out]/control_path_no_fermi',
+          'orient': 'reset;center {1.5850552 -0.03911972 0.442001}; rotate z '
+                    '-142.16; rotate y 55.39; rotate z 91.11;',
+          'ovlp_type': 'wf',
+          'ovlp_with': 'adapt',
+          'pal': 24,
+          'track': True,
+          'type': 'turbomole'},
+ 'coord_type': 'redund',
+ 'interpol': {'between': 0, 'type': None},
+ 'opt': {'dump': True,
+         'gdiis': True,
+         'line_search': True,
+         'max_cycles': 250,
+         'overachieve_factor': 3,
+         'thresh': 'gau_tight',
+         'trust_max': 0.3,
+         'trust_radius': 0.3,
+         'type': 'rfo'},
+ 'xyz': 'runo_nto_track.xyz'}
+
+Read 1 geometries.
+                            ########################
+                            # RUNNING OPTIMIZATION #
+                            ########################
+Spent 0.0 s preparing the first cycle.
+cycle   max(force)    rms(force)     max(step)     rms(step)       s/cycle
+    0     0.028379     0.004565     0.045653     0.011174        163.6
+    1     0.019800     0.002132     0.037491     0.008025        223.6
+    2     0.012397     0.002489     0.049920     0.010585        218.2
+    3     0.026703     0.003135     0.092203     0.010193        221.4
+    4     0.042937     0.003398     0.238404     0.018157        324.3
+    5     0.082112     0.006065     0.211858     0.018157        322.7
+    6     0.025470     0.003112     0.064729     0.015931        313.3
+    7     0.010006     0.001346     0.062538     0.015633        210.9
+    8     0.009660     0.001082     0.027092     0.006428        210.9
+    9     0.006132     0.000669     0.026098     0.005114        182.9
+   10     0.004497     0.000524     0.044651     0.007458        195.4
+   11     0.003120     0.000422     0.020992     0.002302        201.2
+   12     0.002683     0.000281     0.011827     0.002254        202.7
+   13     0.000632     0.000116     0.005150     0.001017        164.6
+   14     0.000393     0.000077     0.003496     0.000823        177.4
+   15     0.000262     0.000051     0.003442     0.000659        164.8
+   16     0.000305     0.000036     0.002285     0.000530        168.4
+   17     0.000308     0.000028     0.002446     0.000472        164.4
+   18     0.000165     0.000020     0.001084     0.000221        137.6
+   19     0.000036     0.000009     0.000419     0.000084        141.4
+Energy increased by 0.000000 au! Cur. trust=0.100000.
+   20     0.000029     0.000005     0.000288     0.000056        144.9
+   21     0.000023     0.000003     0.000240     0.000042        148.4
+Energy increased by 0.000000 au! Cur. trust=0.100000.
+   22     0.000012     0.000002     0.000167     0.000027        125.2
+Energy increased by 0.000000 au! Cur. trust=0.100000.
+   23     0.000008     0.000001     0.000019     0.000006        118.0
+Converged!
+
+Final summary:
+            	max(forces,internal): 0.000008 hartree/(bohr,rad)
+            	rms(forces,internal): 0.000001 hartree/(bohr,rad)
+        	max(forces,cartesian): 0.000019 hartree/bohr
+        	rms(forces,cartesian): 0.000003 hartree/bohr
+        	energy: -1885.97318548 hartree
+Wrote final, hopefully optimized, geometry to 'final_geometry.xyz'
+pysisyphus run took 4764s.
+RunResult(preopt_xyz=None, cos=None, cos_opt=None, ts_geom=None, ts_opt=None, end_geoms=None, irc=None, opt_geom=Geometry(Ru1_Cl2_N4_O1_C15_H11), opt=<pysisyphus.optimizers.RFOptimizer.RFOptimizer object at 0x2ac90fa022e8>, calced_geoms=None, stocastic=None, calc_getter=<function main.<locals>.<lambda> at 0x2ac9155c82f0>)

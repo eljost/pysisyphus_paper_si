@@ -1,0 +1,121 @@
+                           d8b                            888
+                           Y8P                            888
+                                                          888
+88888b.  888  888 .d8888b  888 .d8888b  888  888 88888b.  88888b.  888  888 .d8888b
+888 "88b 888  888 88K      888 88K      888  888 888 "88b 888 "88b 888  888 88K
+888  888 888  888 "Y8888b. 888 "Y8888b. 888  888 888  888 888  888 888  888 "Y8888b.
+888 d88P Y88b 888      X88 888      X88 Y88b 888 888 d88P 888  888 Y88b 888      X88
+88888P"   "Y88888  88888P' 888  88888P'  "Y88888 88888P"  888  888  "Y88888  88888P'
+888           888                            888 888
+888      Y8b d88P                       Y8b d88P 888
+888       "Y88P"                         "Y88P"  888                            
+
+Version 0.4rc7+379.g202f4f6
+
+{'calc': {'charge': 0,
+          'keywords': 'cam-b3lyp tightscf def2-svp rijcosx d3bj grid4 '
+                      'finalgrid5 gridx6',
+          'mult': 1,
+          'pal': 8,
+          'type': 'orca'},
+ 'coord_type': 'redund',
+ 'interpol': {'between': 0, 'type': None},
+ 'tsopt': {'do_hess': True,
+           'dump': True,
+           'hessian_init': 'ts_calculated_init_cart_hessian',
+           'overachieve_factor': 3,
+           'thresh': 'gau_tight',
+           'type': 'rsirfo'},
+ 'xyz': 'splined_hei.xyz'}
+
+Read 1 geometries.
+                          ###########################
+                          # RUNNING TS-OPTIMIZATION #
+                          ###########################
+Spent 69.8 s preparing the first cycle.
+cycle   max(force)    rms(force)     max(step)     rms(step)       s/cycle
+    0     0.068567     0.009671     0.171125     0.023819          0.1
+    1     0.027837     0.004392     0.160530     0.023793         67.5
+    2     0.016450     0.002602     0.236715     0.047584         67.7
+    3     0.012950     0.002429     0.294696     0.079305         69.9
+    4     0.036887     0.004456     0.273886     0.069961         69.3
+    5     0.022133     0.004039     0.232423     0.065599         65.0
+    6     0.018059     0.003381     0.378958     0.079315         69.1
+Energy increased by 0.017950 au! Cur. trust=1.000000.
+    7     0.130545     0.015414     0.124583     0.019836         70.0
+    8     0.037272     0.006370     0.132870     0.019829         64.0
+    9     0.009523     0.001576     0.151312     0.039655         66.8
+   10     0.021925     0.003013     0.144467     0.039671         69.2
+Energy increased by 0.002346 au! Cur. trust=0.500000.
+   11     0.027188     0.003596     0.047674     0.009915         70.2
+   12     0.010820     0.002019     0.073190     0.019836         63.2
+Energy increased by 0.000180 au! Cur. trust=0.250000.
+   13     0.009619     0.001235     0.032897     0.007935         68.7
+   14     0.007162     0.001153     0.074567     0.015862         62.6
+   15     0.017953     0.002583     0.071846     0.015928         64.3
+Energy increased by 0.000307 au! Cur. trust=0.200000.
+   16     0.005697     0.000767     0.026278     0.008008         63.2
+   17     0.001107     0.000269     0.024668     0.007954         60.0
+   18     0.001876     0.000336     0.033542     0.007936         54.8
+   19     0.001438     0.000216     0.061149     0.015864         54.2
+   20     0.003146     0.000449     0.074144     0.015873         60.3
+   21     0.003982     0.000554     0.062009     0.015870         62.4
+   22     0.002594     0.000442     0.037897     0.007940         62.3
+   23     0.002594     0.000324     0.026638     0.008004         60.4
+   24     0.000820     0.000136     0.028120     0.007942         56.9
+   25     0.001691     0.000205     0.027302     0.007992         54.2
+   26     0.000641     0.000126     0.032791     0.007973         57.3
+   27     0.001868     0.000222     0.025146     0.007932         56.6
+Energy increased by 0.000013 au! Cur. trust=0.100000.
+   28     0.000784     0.000141     0.032931     0.007966         54.6
+Energy increased by 0.000012 au! Cur. trust=0.100000.
+   29     0.001914     0.000237     0.029179     0.007932         57.3
+   30     0.000905     0.000107     0.013771     0.003882         56.3
+   31     0.000534     0.000067     0.009130     0.002611         53.3
+   32     0.000467     0.000058     0.002228     0.000670         52.7
+   33     0.000329     0.000045     0.024150     0.007030         47.2
+Energy increased by 0.000003 au! Cur. trust=0.200000.
+   34     0.000549     0.000097     0.015222     0.004168         54.5
+   35     0.000139     0.000023     0.027487     0.007947         53.7
+Energy increased by 0.000011 au! Cur. trust=0.100000.
+   36     0.001186     0.000166     0.020789     0.006000         54.1
+   37     0.000210     0.000029     0.011102     0.003078         54.1
+Energy increased by 0.000001 au! Cur. trust=0.100000.
+   38     0.000291     0.000040     0.008460     0.002275         53.3
+   39     0.000167     0.000022     0.007779     0.002283         50.6
+Energy increased by 0.000001 au! Cur. trust=0.100000.
+   40     0.000311     0.000043     0.002898     0.000869         50.4
+   41     0.000192     0.000025     0.030197     0.007933         47.7
+Energy increased by 0.000011 au! Cur. trust=0.100000.
+   42     0.000794     0.000111     0.026960     0.006978         54.4
+   43     0.000118     0.000016     0.005267     0.001547         54.0
+Energy increased by 0.000001 au! Cur. trust=0.100000.
+   44     0.000202     0.000029     0.002526     0.000758         47.6
+   45     0.000139     0.000018     0.001356     0.000353         47.3
+Energy increased by 0.000000 au! Cur. trust=0.100000.
+   46     0.000101     0.000014     0.023589     0.007933         42.2
+Energy increased by 0.000017 au! Cur. trust=0.100000.
+   47     0.000393     0.000079     0.022551     0.007547         59.8
+   48     0.000072     0.000010     0.000949     0.000274         59.5
+Energy increased by 0.000000 au! Cur. trust=0.100000.
+   49     0.000084     0.000011     0.002033     0.000600         44.2
+Number of cycles exceeded!
+Final summary:
+            	max(forces,internal): 0.000079 hartree/(bohr,rad)
+            	rms(forces,internal): 0.000011 hartree/(bohr,rad)
+        	max(forces,cartesian): 0.000076 hartree/bohr
+        	rms(forces,cartesian): 0.000027 hartree/bohr
+        	energy: -1105.41996462 hartree
+Wrote final, hopefully optimized, geometry to 'final_geometry.xyz'
+Copied '/home/carpx/tmp/07_finer_tight/ts_opt_simple_coords_no_recalc/final_geometry.xyz' to 'ts_opt.xyz'.
+
+Calculating hessian at final geometry.
+... mass-weighing cartesian hessian
+... doing eckart-projection
+
+First 10 eigenvalues [-0.0033 -0.     -0.      0.      0.      0.      0.      0.0001  0.0002  0.0003]
+Imaginary frequencies: [-293.61   -7.07] cm⁻¹
+
+Wrote final (not mass-weighted) hessian to 'calculated_final_cart_hessian'.
+
+pysisyphus run took 3827s.
